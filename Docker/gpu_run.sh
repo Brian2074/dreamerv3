@@ -46,6 +46,7 @@ docker run \
     --network host \
     --privileged \
     --security-opt seccomp=unconfined \
+    --gpus all \
     ${IMG} \
     bash
 xhost -
