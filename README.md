@@ -55,6 +55,12 @@ The code has been tested on Linux and Mac and requires Python 3.11+.
 You can either use the provided `Dockerfile` that contains instructions or
 follow the manual instructions below.
 
+```
+cd dreamerv3
+source Docker/gpu_run.sh
+python main.py --logdir /logdir/{timestamp} --configs minecraft debug --task minecraft_diamond
+```
+
 ## Manual
 
 Install [JAX][jax] and then the other dependencies:
