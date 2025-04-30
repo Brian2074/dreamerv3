@@ -48,3 +48,5 @@ echo "=================================================="
 echo "Start building image"
 
 docker buildx build --load --rm "$@" -f "${DOCKERFILE_PATH}" -t "${IMG}" "${SCRIPT_PATH}"
+
+docker logout

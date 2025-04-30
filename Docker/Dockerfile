@@ -36,7 +36,7 @@ RUN chown -R 1000:root /venv/lib/python3.11/site-packages/minerl
 
 # Requirements
 RUN pip install jax[cuda]==0.5.0
-COPY requirements.txt requirements.txt
+COPY ../requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
 # Source
