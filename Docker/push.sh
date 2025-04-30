@@ -7,3 +7,4 @@ IMG="${REPOSITORY}:${TAG}"
 # Push the image to Docker Hub
 docker login
 docker push ${IMG}
+docker logout
