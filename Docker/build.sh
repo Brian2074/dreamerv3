@@ -48,6 +48,3 @@ echo "=================================================="
 echo "Start building image"
 
 docker buildx build --load --rm "$@" -f "${DOCKERFILE_PATH}" -t "${IMG}" "${SCRIPT_PATH}"
-
-# Push the image to Docker Hub
-docker push ${IMG}

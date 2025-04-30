@@ -6,8 +6,6 @@ TAG="gpu" # Change this to the tag you want to use
 IMG="${REPO_NAME}:${TAG}"
 PROJ_NAME="dreamerv3"
 
-docker pull ${REPO_NAME}:${TAG}
-
 # Make sure processes in the container can connect to the x server
 # Necessary so gazebo can create a context for OpenGL rendering (even headless)
 XAUTH=/tmp/.docker.xauth
